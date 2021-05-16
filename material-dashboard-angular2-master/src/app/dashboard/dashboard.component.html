@@ -1,0 +1,67 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Edit Offer</h4>
+                        <p class="card-category">...</p>
+                    </div>
+                    <div class="card-body">
+                        <form (ngSubmit)="onSubmit()">
+                            <div class="row">
+                                <div class="col-md-5">
+                                  <mat-form-field class="example-full-width">
+                                      <input matInput  [(ngModel)]="offers.nameoffre"placeholder="name of offers" name="nameoffre">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-3">
+                                    <mat-form-field class="example-full-width">
+                                      <input matInput placeholder="name of enterprise" [(ngModel)]="offers.nomentreprise"name="nomentreprise">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                      <input matInput placeholder="place" type="text" [(ngModel)]="offers.localisation"name="localisation">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="date" type="date"[(ngModel)]="offers.datedepub" name="datedepub">
+                                  </mat-form-field>
+                                </div>
+                                <div class="col-md-6">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput type="date" placeholder="date" [(ngModel)]="offers.dateexpiration"  name="dateexpiration" >
+                                  </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="info" type="text"  [(ngModel)]="offers.info" name="info" >
+                                  </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="disc" type="text" [(ngModel)]="offers.discription"name="discription">
+                                  </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="exigence" type="text"[(ngModel)]="offers.exigence"name="exigence">
+                                  </mat-form-field>
+                                </div>
+                            </div> 
+                            
+                            <button mat-raised-button type="submit" class="btn btn-danger pull-right">Update Offers</button>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>   
+        </div>

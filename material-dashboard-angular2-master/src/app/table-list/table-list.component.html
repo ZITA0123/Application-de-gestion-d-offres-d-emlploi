@@ -1,0 +1,123 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger">
+                      <h4 class="card-title ">List Of Offers</h4>
+                      <p class="card-category"> Here is the list af all offers</p>
+                      
+                  </div>
+                  <div class="card-body">
+                      <div class="table-responsive">
+                          <table class="table">
+                              <thead class=" text-primary">
+                                  <th>
+                                      ID
+                                  </th>
+                                  <th>
+                                      Name
+                                  </th>
+                                  <th>
+                                      name enterprise
+                                  </th>
+                                  <th>
+                                      City
+                                  </th>
+                                  <th>
+                                      information
+                                  </th>
+                              </thead>
+                              <tbody >
+                                  <tr *ngFor="let items of menus">
+                                      <td>
+                                          {{items.id}}
+                                      </td>
+                                      <td>
+                                         {{items.nameoffre}}
+                                      </td>
+                                      <td>
+                                          {{items.nomentreprise}}
+                                      </td>
+                                      <td>
+                                          {{items.localisation}}
+                                      </td>
+                                      <td class="text-primary">
+                                          {{items.info}}
+                                      </td>
+                                      <td><button (click)="deleteoffre(items.id)" class="btn btn-danger">Delete</button>
+                                        <button (click)="OffreDetails(items.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+                                        <button (click)="offreupdates(items.id)" class="btn btn-danger">update</button>
+                                    </td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-12">
+              <div class="card card-plain">
+                  <div class="card-header card-header-danger">
+                      
+                  </div>
+                  <div class="card-body">
+                    <div class="container">
+                        <div class="row">    
+                            <div class="col-xs-8 col-xs-offset-2">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" [(ngModel)]="name" name="offre" placeholder="Search term...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" (click)="clickme(name)" type="button"><span class="glyphicon glyphicon-search">Search specific offer</span></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                 </div>
+                 <div class="table-responsive">
+                    <table class="table">
+                        <thead class=" text-primary">
+                            <th>
+                                ID
+                            </th>
+                            <th>
+                                Name
+                            </th>
+                            <th>
+                                name enterprise
+                            </th>
+                            <th>
+                                City
+                            </th>
+                            <th>
+                                information
+                            </th>
+                        </thead>
+                        <tbody >
+                            <tr *ngFor="let items of f">
+                                <td>
+                                    {{items.id}}
+                                </td>
+                                <td>
+                                   {{items.nameoffre}}
+                                </td>
+                                <td>
+                                    {{items.nomentreprise}}
+                                </td>
+                                <td>
+                                    {{items.localisation}}
+                                </td>
+                                <td class="text-primary">
+                                    {{items.info}}
+                                </td>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,58 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="card">
+        <div class="card-header card-header-danger">
+            <h4 class="card-title">offer Details</h4>
+            <p class="card-category"></p>
+        </div>
+        <div class="card-body" *ngIf="offers">
+           
+            <div id="typography" >
+                <div class="card-title">
+                    <h2>offer Details</h2>
+                   
+                </div>
+                <div class="row">
+                    <div class="tim-typo">
+                        <h1>
+                            <span class="tim-note">name of offers</span>{{offers.nameoffre}}</h1>
+                    </div>
+                    <div class="tim-typo">
+                        <h2>
+                            <span class="tim-note">name of enterprise</span>{{offers.nomentreprise}}</h2>
+                    </div>
+                    <div class="tim-typo">
+                        <h3>
+                            <span class="tim-note">Place</span>{{offers.localisation}}</h3>
+                    </div>
+                    <div class="tim-typo">
+                        <h4>
+                            <span class="tim-note">publich day</span>{{offers.datedepub}}</h4>
+                    </div>
+                    <div class="tim-typo">
+                        <h5>
+                            <span class="tim-note">expire day</span>{{offers.dateexpiration}}</h5>
+                    </div>
+                    <div class="tim-typo">
+                        <h6>
+                            <span class="tim-note">informations</span>{{offers.info}}</h6>
+                    </div>
+                    <div class="tim-typo">
+                        <p>
+                            <span class="tim-note">DESCRIPTION</span>
+                            {{offers.info}}</p>
+                    </div>
+                    <div class="tim-typo">
+                        <span class="tim-note">exigence</span>
+                        <blockquote class="blockquote">
+                            <p>
+                                {{offers.exigence}} 
+                            </p>
+                          
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
