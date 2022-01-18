@@ -1,5 +1,5 @@
 # Offres-D-emploi
-Simple application de gestion d'offres d'emploi
+Application de gestion d'offres d'emploi
 Il s'agit de la mise en pratique des fondamentaux des framework AngularJs(FrontEnd) et Laravel(Backend). 
 L'application permet:
 • L'ajout d’une nouvelle offre d’emploi
