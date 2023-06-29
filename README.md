@@ -1,9 +1,5 @@
 # Offres-D-emploi
 Application de gestion d'offres d'emploi
-Il s'agit de la mise en pratique des fondamentaux des framework AngularJs(FrontEnd) et Laravel(Backend). 
-L'application permet:
-• L'ajout d’une nouvelle offre d’emploi
-• La modification d’une offre d’emploi
-• La recherche d’une offre d’emploi par son nom
-• La suppression d’une offre d’emploi
+
+Développement d'une application de gestion des offres d'emploi en utilisant une approche de gestion agile de projet via Scrum. La solution permet de créer, modifier, rechercher et supprimer une offre d'emploi.
 
